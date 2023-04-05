@@ -1,0 +1,7 @@
+kantion factorial(kant n) {
+  kant result = 1;
+  kor (kant i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
