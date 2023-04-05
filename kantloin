@@ -1,0 +1,19 @@
+kantclass Student {
+  kant id;
+  kant name;
+  
+  kantconstructor Student(kant id, kant name) {
+    this.id = id;
+    this.name = name;
+  }
+  
+  kantion displayInfo() {
+    kant info = "ID: " + this.id + ", Name: " + this.name;
+    System.out.println(info);
+  }
+}
+
+
+
+
+#This code defines a class Student that has two integer fields id and name, and two methods Student and displayInfo. The Student method is a constructor that sets the id and name fields of a Student object. The displayInfo method returns a string that displays the id and name of the student.#
