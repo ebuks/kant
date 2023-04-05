@@ -1,3 +1,5 @@
+#Kanuscript supports basic data types such as integers, floating-point numbers, strings, booleans, and characters. Kanuscript also supports complex data types such as arrays, lists, and maps.#
+
 kant x = 5;
 kant y = 3.14;
 kanstring name = "John";
@@ -11,14 +13,20 @@ ages.put("Jane", 25);
 
 #or#
 
+#Kanuscript uses the kant keyword to declare variables. Variables are strongly typed and their type cannot be changed after initialization.#
+
 kant x = 5;
 kanstring name = "John";
 kant[] numbers = {1, 2, 3};
+
+#Kanuscript uses the kant keyword to declare variables. Variables are strongly typed and their type cannot be changed after initialization.#
 
 kant x = 5 + 3; // addition
 kant y = 5 > 3; // greater than
 kanbool z = true && false; // logical AND
 x += 2; // addition assignment
+
+#Kanuscript supports if-else statements, loops, and switch statements.#
 
 if (x > 0) {
   System.out.println("x is positive");
@@ -33,6 +41,12 @@ while (i < 10) {
   System.out.println(i);
   i++;
 }
+
+
+#Kanuscript supports polymorphism, which allows objects to be treated as instances of their parent class or any of their child classes.#
+
+Person person = new Student("John", 30, 10);
+System.out.println(person.sayHello());
 
 for (kant i = 0; i < numbers.length; i++) {
   System.out.println(numbers[i]);
@@ -50,7 +64,7 @@ switch (x) {
 }
 
 
-#
+#Kanuscript supports functions, which are reusable blocks of code that can take parameters and return values.#
 
 
 kantion add(kant x, kant y) {
@@ -60,3 +74,31 @@ kantion add(kant x, kant y) {
 kant sum = add(3, 4);
 
 #Kanuscript supports single-line and multi-line comments.#
+
+
+#Kanuscript supports object-oriented programming with classes, constructors, fields, and methods#
+
+kantclass Person {
+  kanstring name;
+  kant age;
+  
+  Person(kanstring name, kant age) {
+    this.name = name;
+    this.age = age;
+  }
+  
+  kantion sayHello() {
+    return "Hello, my name is " + this.name;
+  }
+}
+
+Person person = new Person("John", 30);
+System.out.println(person.sayHello());
+
+#Kanuscript supports inheritance, which allows classes to inherit fields and methods from a parent class.#
+
+kantclass Student extends Person {
+  kant grade;
+  
+  Student
+
