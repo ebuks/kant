@@ -9,3 +9,54 @@ kantmap<String, Integer> ages = new kantmap<String, Integer>();
 ages.put("John", 30);
 ages.put("Jane", 25);
 
+#or#
+
+kant x = 5;
+kanstring name = "John";
+kant[] numbers = {1, 2, 3};
+
+kant x = 5 + 3; // addition
+kant y = 5 > 3; // greater than
+kanbool z = true && false; // logical AND
+x += 2; // addition assignment
+
+if (x > 0) {
+  System.out.println("x is positive");
+} else if (x == 0) {
+  System.out.println("x is zero");
+} else {
+  System.out.println("x is negative");
+}
+
+kant i = 0;
+while (i < 10) {
+  System.out.println(i);
+  i++;
+}
+
+for (kant i = 0; i < numbers.length; i++) {
+  System.out.println(numbers[i]);
+}
+
+switch (x) {
+  case 1:
+    System.out.println("x is one");
+    break;
+  case 2:
+    System.out.println("x is two");
+    break;
+  default:
+    System.out.println("x is neither one nor two");
+}
+
+
+#
+
+
+kantion add(kant x, kant y) {
+  return x + y;
+}
+
+kant sum = add(3, 4);
+
+#Kanuscript supports single-line and multi-line comments.#
